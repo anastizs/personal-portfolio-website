@@ -3,19 +3,19 @@
 
 .page-header {
     position: relative;
-    // padding: 15px;
     background-color: $color-primary;
-    // border-bottom: 1px solid #ECECEC; 
-    // outline: 1px solid red;
 }
 .header {
     display: flex;
+    height: 119px;
     justify-content: space-between;
     outline: 1px solid orange;
 }
 .navigation__btn{
     z-index: 11;
     display: inline-flex;
+    width: 48px;
+    height: 48px;
     margin: 32px 0;
     fill: $color-white;
     border: none;
@@ -58,6 +58,7 @@
     height: 100%;
     padding-left: 40px;
     background-color: $color-white;
+    color: $color-primary;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
     &.is-open{
@@ -70,36 +71,41 @@
 .page-header {
     align-items: center;
     justify-content: space-between;
+    background-color: $color-white;
     }
-.menu-container{
-    box-shadow: none;
-    flex-direction: row;
-}
 
+.header {
+    height: 84px;
+}
 .menu-container{
     position: static;
     display: flex;
-    padding: 0;
-    
+    height: 68px;
+    box-shadow: none;
+    flex-direction: row;
+    background-color: $color-primary;
+    border-radius: 50px;
+    color: $color-white;
+    justify-content: space-between;
+    padding-left: 0;
+    padding: 16px 16px;
+    margin: 16px 16px;
 }
-    .navigation__btn{
+
+.navigation__btn{
         display: none;
     }
 }
-// export const Section=styled.div` list-style: none;
-// margin-top: 39px;
-// margin-left: 72px;
-// margin-right: 72px;
-// padding-top: 22px;
-// padding-bottom: 22px;
-// padding-left: 84px;
-// padding-right: 84px;
-// display: flex;
-// height: 85px;
-// color: #ffffff;
-// background-color: #0a0a0a;
-// flex-wrap: nowrap;
-// justify-content: space-between;
-// align-items: center;
-// border-radius: 50px;
-// `;
+// Десктопна версія 1440px
+@media screen and (min-width: 1440px) {
+    .header {
+        height: 124px;
+    }
+
+    .menu-container {
+        height: 85px;
+        padding: 22px 85px;
+        margin: 39px 72px;
+    }
+
+}

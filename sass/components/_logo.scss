@@ -2,6 +2,7 @@
 
 
 .logo {
+    display: flex;
     color: $color-white;
     font-family: "Yeseva One", sans-serif;
     font-style: normal;
@@ -28,17 +29,81 @@
         padding-left: 10px;
         margin: auto 0;
 }
+
+.logo {
+    display: flex;
+    color: $color-white;
+    font-family: "Yeseva One", sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+
+
+}
+
+.logo__span {
+    display: flex;
+    width: 41px;
+    height: 41px;
+    border-radius: 25px;
+    background-color: #fe4519;
+    font-family: "Yeseva One", sans-serif;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.17;
+    color: #fff;
+    align-items: center;
+    justify-content: flex-star;
+    padding-left: 10px;
+    margin: auto 0;
+}
+
+.site-nav__logo {
+    display: none;
+}
+
+.site-nav__logo-span {
+    display: none;
+}
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {
 .logo{
-    margin: 26px 0;
+    display: none;
+}
+.logo__span{
+    display: none;
+}
+
+.site-nav__logo-span {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    background-color: #fe4519;
+    font-family: "Yeseva One", serif;
+    font-style: normal;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
 }
 }
 
-// Планшетна версія 1200px
-@media screen and (min-width: 1200px) {
+// Планшетна версія 1440px
+@media screen and (min-width: 1440px) {
 .logo {
-    font-size: 26px;
-    line-height: 1.2;
+    display: none;
+}
+.logo__span {
+    display: none;
+}
+
+.site-nav__logo-span {
+    width: 41px;
+    height: 41px;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
 }
 }
