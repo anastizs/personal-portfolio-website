@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,8 +7,10 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Syne:wght@700&family=Yeseva+One&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,36 +22,85 @@
 
   <body>
     <!-- Шапка сторінки -->
-    <header>
-      <section>
-        <nav>
-          <ul>
-            <li>Головна</li>
-            <li>Про мене</li>
-            <li>Послуги</li>
-          </ul>
-          <ul>
-            <li>
-              <a>A</a>
-            </li>
-            <li>
-              <a href="./">Анастасія</a>
-            </li>
-          </ul>
+    <header class="page-header">
+      <div class="container responsive">
+        <div class="header">
+            <div class="logo__span">A<a href="./index.html" class="logo">nastasiia</a></div>
+            
+            <button
+          type="button"
+          class="navigation__btn"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="48" height="48" aria-label="Перемикач мобільного меню">
+            <use
+              class="icon-close"
+              href="./images/symbol-defs.svg#icon-close40px"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/symbol-defs.svg#icon-menu40px"
+            ></use>
+          </svg>
+        </button>
 
-          <ul>
-            <li>Резюме</li>
-            <li>Проєкти</li>
-            <li>Контакти</li>
+        <nav class="menu-container" id="menu-container" data-menu>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link">Home</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link">About</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link">Service</a>
+            </li>
           </ul>
-        </nav>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link">A</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link">Anastis</a>
+            </li>
+          </ul>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link">Resume</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link">Project</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav></div>
+        
       </section>
     </header>
     <!-- Унікальний контент сторінки -->
-    <main></main>
+    <main>
+        <div class="container">
+        <div class="hero">
+            <div class="hero_text">Hello!</div>
+            <h1 class="hero__title">I’m <span class="hero__title-span">Anastasiia,</span>
+            FrontEnd Developer</h1>
+            <div class="hero_background">
+                <ul class="hero_button-list">
+                    <li><button class="hero__btn1">Portfolio</button></li>
+                <li><button class="hero__btn2">Hire Me</button></li>
+                
+            </ul>
+                
+            </div>
+        </div>
+    </main>
     <!-- ПІДВАЛ СТОРІНКИ -->
     <footer></footer>
-    <!-- <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script> -->
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

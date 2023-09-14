@@ -2,48 +2,102 @@
 
 // Мобільна версія 480px
 
-.hero-container {
-    background-color: $color-bgr-footer;
-}
-
 .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-}
+    padding-top: 64px;
+    outline: 1px solid red;
 
+}
+.hero_text{
+    display: flex;
+    width: 87px;
+    height: 41px;
+        outline: 1px solid black;
+        border-radius: 25px;
+        justify-content: center;
+        align-items: center;
+    font-family: "Syne", serif;
+        font-style: normal;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.62;
+        margin-bottom: 12px;
+        margin: auto;
+}
 .hero__title {
-    font-weight: 900;
-    font-size: 26px;
+
+    font-family: "Syne", sans-serif;
+        font-style: normal;
+        font-size: 32px;
+    font-weight: 700;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    color: $color-white;
+    margin-bottom: 81px;
+    color: $color-black;
 }
+.hero__title-span{
+    color: $color-accent;
+}
+.hero_background{
 
-.hero__btn {
-    display: block;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: #fe4519;
+        height: 335px;
+        width: 398px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin: auto;
+    background-color: $color-accent;
+    border-top-left-radius: 580px;
+    border-top-right-radius: 580px;
 
-    border: none;
+}
+.hero_button-list {
+    list-style: none;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        width: 378px;
+        height: 67px;
+        margin: 16px auto;
+        padding: 0;
+        border-radius: 50px;
+    
+
+}
+.hero__btn1 {
+    list-style: none;
+        background-color: $color-accent;
+        width: 175px;
+        height: 54px;
+        margin: auto;
+        padding: 0;
+        border-radius: 50px;
+        border-color: inherit;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+        color: $color-white;
+        cursor: pointer;
+    padding: 12px 24px;
+}
+.hero__btn2 {
+    list-style: none;
+    background-color: $color-white;
+    width: 175px;
+    height: 54px;
+    margin: auto;
+    padding: 0;
+    border-radius: 50px;
+    border-color: $color-black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: $color-black;
     cursor: pointer;
-
-    background: $color-accent;
-    color: $color-white;
-
-    padding: 10px 24px;
-    margin-left: auto;
-    margin-right: auto;
-
-    &:active {
-        background: #188CE8;
-    }
+    padding: 12px 24px;
 }
 
 
@@ -69,3 +123,92 @@
     padding: 10px 32px;
 }
 }
+
+// export const Сaption=styled.h1` display: inline-block;
+// max-width: 838px;
+// height: 260px;
+// margin-left: 229px;
+// font-family: "Yeseva One",
+// sans-serif;
+// font-style: normal;
+// font-size: 86px;
+// font-weight: 700;
+// text-align: center;
+// //   float: right;
+// outline: solid 1px red;
+// `;
+// export const Span=styled.span` color: #fe4519;
+// `;
+
+// export const Quote=styled.h4` outline: solid 1px red;
+// width: 382px;
+// color: #484848;
+// font-family: "Roboto",
+// sans-serif;
+// font-size: 22px;
+// font-weight: 400;
+// margin: 0px;
+// `;
+// export const QuoteTitle=styled.h4` outline: solid 1px red;
+// width: 382px;
+// color: #262626;
+// font-family: "Roboto",
+// sans-serif;
+// font-size: 36px;
+// font-weight: 700;
+// margin-top: 50px;
+// margin-bottom: 15px;
+// `;
+
+// export const Backgraund=styled.div` background-color: #fe4519;
+// height: 335px;
+// width: 752px;
+// display: flex;
+// align-items: flex-end;
+// justify-content: center;
+// margin: auto;
+// border-top-left-radius: 420px;
+// border-top-right-radius: 420px;
+// `;
+
+// export const ButtonList=styled.ul` list-style: none;
+// display: flex;
+// gap: 12px;
+// justify-content: center;
+// align-items: center;
+// background-color: #fff;
+// width: 476px;
+// height: 86px;
+// margin: 43px auto;
+// padding: 0;
+// border-radius: 50px;
+// `;
+// export const ButtonItem1=styled.button` list-style: none;
+// background-color: #fe4519;
+// width: 224px;
+// height: 70px;
+// margin: auto;
+// padding: 0;
+// border-radius: 50px;
+// border-color: inherit;
+// font-family: "Roboto",
+// sans-serif;
+// font-weight: 500;
+// font-size: 32px;
+// color: #fff;
+// cursor: pointer;
+// `;
+// export const ButtonItem2=styled.button` list-style: none;
+// background-color: #fff;
+// width: 224px;
+// height: 70px;
+// margin: auto;
+// padding: 0;
+// border-radius: 50px;
+// border-color: #000;
+// font-family: "Roboto",
+// sans-serif;
+// font-weight: 500;
+// font-size: 32px;
+// cursor: pointer;
+// `;
