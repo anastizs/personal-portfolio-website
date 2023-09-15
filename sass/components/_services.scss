@@ -32,9 +32,10 @@
         margin-top: 16px;
         
 }
-.service-list{
+.service-list {
     display: flex;
     flex-direction: column;
+    
 }
 
 .service-item{
@@ -112,14 +113,16 @@
     
         .service-list {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
             align-items: center
         }
     
         .service-item {
-            width: 446px;
-            height: 530px;
-            margin-top: 68px;
+            width: 415px;
+            height: 498px;
+            margin-top: 81px;
         }
     
         .service-item-text {
@@ -127,8 +130,8 @@
         }
     
         .service-img {
-            width: 446px;
-            height: 370px;
+            width: 415px;
+            height: 340px;
             margin-top: 51px;
         }
 
@@ -150,11 +153,14 @@
     .service_text {
         width: 435px;
         font-size: 20px;
+        margin-top: 0;
 
     }
 
     .service-list {
+        display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         gap: 10px;
     }
 
