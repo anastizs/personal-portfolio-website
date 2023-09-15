@@ -9,14 +9,58 @@
 }
 .service_heading{
     color: $color-white;
-    font-family: 'Syne' sans-serif;
-    font-size: 40px;
+    font-family: "Syne", serif;
+        font-size: 40px;
+        font-weight: 600;
     letter-spacing: 0.1em;
 }
 .service_heading-span{
     color: $color-accent;
 }
+.service_text{
+    font-family: "Roboto", serif;
+        font-size: 18px;
+        font-weight: 400;
+        opacity: 0.8;
+        color: $color-white;
+        margin-top: 16px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid $color-white;
+}
 
+.service-item{
+    display: flex;
+    width: 398px;
+    height: 484px;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+    
+}
+.service-item-text{
+    display: flex;
+    color: $color-white;
+    font-family: "Syne", serif;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.service-button{
+    position: absolute;
+    right: -289px;
+    top: -289px;
+    width: 109px;
+    height: 109px;
+    border-radius: 50px;
+
+
+}
+  
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {
 

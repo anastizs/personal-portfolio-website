@@ -495,6 +495,10 @@ ul {
   cursor: pointer;
   padding: 12px 24px;
 }
+.hero__btn1:hover, .hero__btn1:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .hero__btn2 {
   list-style: none;
@@ -504,13 +508,17 @@ ul {
   margin: auto;
   padding: 0;
   border-radius: 50px;
-  border-color: #000000;
+  border-color: #262626;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 25px;
   color: #000000;
   cursor: pointer;
   padding: 12px 24px;
+}
+.hero__btn2:hover, .hero__btn2:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 @media screen and (min-width: 768px) {
@@ -574,11 +582,63 @@ ul {
 
 .service_heading {
   color: #ffffff;
-  font-family: "Syne" sans-serif;
+  font-family: "Syne", serif;
   font-size: 40px;
+  font-weight: 600;
   letter-spacing: 0.1em;
 }
 
 .service_heading-span {
   color: #FE4519;
+}
+
+.service_text {
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.8;
+  color: #ffffff;
+  margin-top: 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.service-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 398px;
+  height: 484px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.service-item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  font-family: "Syne", serif;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.service-button {
+  position: absolute;
+  right: -289px;
+  top: -289px;
+  width: 109px;
+  height: 109px;
+  border-radius: 50px;
 }/*# sourceMappingURL=main.css.map */
