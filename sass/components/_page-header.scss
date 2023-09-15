@@ -100,12 +100,16 @@
 @media screen and (min-width: 1440px) {
     .header {
         height: 124px;
+        
     }
 
     .menu-container {
         height: 85px;
         padding: 22px 85px;
-        margin: 39px 72px;
+        margin: 39px 0;
+        width: 1296px;
+        
+         
     }
 
 }
