@@ -6,9 +6,9 @@
     <symbol id="icon-arrow-left" viewBox="0 0 32 32">
       <path d="M31.083 15H5.006l6-6L9.59 7.586 1.177 16l8.414 8.414L11.006 23l-6-6h26.077v-2z"/>
     </symbol>
-    <symbol id="icon-arrow-right" viewBox="0 0 32 32">
-      <path d="M22.492 7.586 21.078 9l6 6H1v2h26.078l-6 6 1.414 1.414L30.906 16l-8.414-8.414z"/>
-    </symbol>
+    <symbol id="icon-arrow-right"  viewBox="0 0 32 32">
+<path d="M7.414 27.414l16.586-16.586v7.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-12c0-0.809-0.487-1.538-1.235-1.848-0.248-0.103-0.508-0.151-0.765-0.151v-0.001h-12c-1.105 0-2 0.895-2 2s0.895 2 2 2h7.172l-16.586 16.586c-0.391 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+</symbol>
     <symbol id="icon-close" viewBox="0 0 32 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" d="m27.429 3.429-24 24m0-24 24 24"/>
     </symbol>
