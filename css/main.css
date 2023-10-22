@@ -259,12 +259,10 @@ ul {
   background-color: #FE4519;
   width: 234px;
   height: 70px;
-  margin: auto;
   padding: 0;
   border-radius: 50px;
   border: 2px solid #FE4519;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
   font-size: 32px;
   color: #ffffff;
   fill: #ffffff;
@@ -1128,16 +1126,77 @@ ul {
     font-size: 24px;
   }
 }
-.portfolio-heading {
+.portfolio_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1296px;
+  margin-top: 54px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio_heading {
+  width: 50%;
   color: #000000;
   font-family: "Syne", serif;
   font-size: 40px;
   font-weight: 600;
-  margin-top: 54px;
 }
 
-.portfolio-heading-span {
+.portfolio_heading-span {
   color: #FE4519;
+}
+
+.card_container {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px auto 18px auto;
+}
+
+.card_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #262626;
+  font-family: "Roboto", serif;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #F1F1F1;
+  border-radius: 50px;
+  margin: 0 auto 32px auto;
+  padding: 12px 24px;
+}
+
+.card_heading {
+  color: #262626;
+  font-family: "Syne", serif;
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 18px;
 }
 
 #carousel {
@@ -1146,14 +1205,14 @@ ul {
   overflow: hidden;
 }
 #carousel #scene {
-  width: 42%;
+  width: 78%;
   margin: 40px auto 0 auto;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.9s;
+  transition: -webkit-transform 0.9s;
+  transition: transform 0.9s;
+  transition: transform 0.9s, -webkit-transform 0.9s;
 }
 #carousel #scene .carousel_item {
   width: 100%;
@@ -1201,4 +1260,30 @@ ul {
 }
 #carousel #carousel_btn > div:first-child {
   margin-right: 10px;
+}
+
+.feedback_container {
+  padding: 50px 0;
+  outline: 1px solid red;
+}
+
+.feedback_heading {
+  color: #ffffff;
+  font-family: "Syne", serif;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.feedback_heading-span {
+  color: #FE4519;
+}
+
+.feedback_text {
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.8;
+  color: #ffffff;
+  margin-top: 16px;
 }/*# sourceMappingURL=main.css.map */
