@@ -1,87 +1,190 @@
-// МОЇ ПОСЛУГИ
-
 
 
 // Мобільна версія 480px
 .feedback_container{
-    // background-color: $color-primary;
+    background-color: $color-primary;
     padding: 50px 0;
-    outline: 1px solid red;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+
+    min-height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .feedback_heading{
+    width: 540px;
     color: $color-white;
     font-family: "Syne", serif;
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin: 50px auto 18px auto;
 }
 
 .feedback_heading-span{
     color: $color-accent;
 }
 .feedback_text{
+    width: 616px;
     font-family: "Roboto", serif;
-        font-size: 18px;
-        font-weight: 400;
-        opacity: 0.8;
-        color: $color-white;
-        margin-top: 16px;
+    font-size: 24px;
+    font-weight: 400;
+    opacity: 0.8;
+    color: $color-white;
+    margin: 0 auto 60px auto;
+    text-align: center;
+    opacity: .8;
         
 }
 
+.wrapper {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		text-align:center;
+		color:$white;
+		padding:$g-spacing;
+	}
+	
 
-  
-// Планшетна версія 768px
-@media screen and (min-width: 768px) {
-    // .service_container {
-    //         padding: 60px 0;
-    //         border-radius: 50px;
-    //     }
-    
-    //     .service-title {
-    //         display: flex;
-    //         flex-direction: row;
-    //         justify-content: space-between;
-    //         align-items: center;
-    //     }
-    
-    //     .service_heading {
-    //         font-size: 38px;
-    //     }
-    
-    
-    //     .service_text {
-    //         width: 360px;
-    //         font-size: 18px;
-    //         margin-top: 0;
-    
-    //     }
-    
-    //     .service-list {
-    //         display: flex;
-    //         flex-direction: row;
-    //         flex-wrap: wrap;
-    //         gap: 10px;
-    //         align-items: center
-    //     }
-    
-    //     .service-item {
-    //         width: 415px;
-    //         height: 498px;
-    //         margin-top: 81px;
-    //     }
-    
-    //     .service-item-text {
-    //         font-size: 36px;
-    //     }
-    
-    //     .service-img {
-    //         width: 415px;
-    //         height: 340px;
-    //         margin-top: 51px;
-    //     }
+// Start Swiper
+.swiper {
+	padding:$g-spacing;
+	.content-wrapper {
+		
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: ".";
+		width: 100%;
+		justify-items: center;
+		align-items: center;
+		.content {
+			padding: $g-spacing * 2 $g-spacing;
+				text-align: center;
+				display: grid;
+				justify-items: center;
+				align-items: center;
+				margin:0 auto;
+			color:$black;
+			:first-child {
+				margin: 0;
+			}
+			.swiper-avatar {
+				width:100%;
+				max-width:125px;
+				height:auto;
+				img {
+					border-radius: 500px;
+				}
+			}
+			.cite {
+				font-size:14px;
+				font-weight:bold;
+			}
+		}
+	}
+	.swiper-slide {
+		margin: 0;
+		height: auto;
+		width: 100%;
+		padding:0;
+		opacity:.2;
+		background:rgba(255,255,255,.3);
+		border-radius:6px;
+		transition: all .5s ease-in-out;
+		&.swiper-slide-active {
+			background:rgba(255,255,255,1);
+			opacity:1;
+			transform: scale(1.1);
+		}
+	}
+	.swiper-nav-wrapper {
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		width: auto;
+		padding-top:$g-spacing * 2;
+		.swiper-button-next,
+		.swiper-button-prev {
+			top: 0;
+			top: auto;
+			left: auto;
+			right: auto;
+			position: relative !important;
+			&:after {
+				display: none;
+			}
+		}
+		.swiper-button-next,
+		.swiper-container-rtl .swiper-button-prev {
+			background-image: url("data:image/svg+xml,%0A%3Csvg width='9px' height='16px' viewBox='0 0 9 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='chevron-right' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M8.674805,7.066406 L1.924805,0.316406 C1.696288,0.105468 1.432619,0 1.133789,0 C0.834959,0 0.57129,0.105468 0.342773,0.316406 C0.114257,0.544923 0,0.808592 0,1.107422 C0,1.406251 0.114257,1.669921 0.342773,1.898438 L6.301758,7.857422 L0.342773,13.816406 C0.114257,14.044923 0,14.308592 0,14.607422 C0,14.906251 0.114257,15.169921 0.342773,15.398438 C0.465821,15.521485 0.584472,15.609375 0.69873,15.662109 C0.812989,15.714844 0.958007,15.741211 1.133789,15.741211 C1.309571,15.741211 1.454589,15.714844 1.568848,15.662109 C1.683106,15.609375 1.801757,15.521485 1.924805,15.398438 L8.674805,8.648438 C8.903321,8.419921 9.017578,8.156251 9.017578,7.857422 C9.017578,7.558592 8.903321,7.294923 8.674805,7.066406 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+			width: 20px;
+			height: 20px;
+			background-size: 20px 20px;
+			background-repeat: no-repeat;
+			margin: 0;
+			padding: 0;
+		}
 
+		.swiper-button-prev,
+		.swiper-container-rtl .swiper-button-next {
+			background-image: url("data:image/svg+xml,%0A%3Csvg width='9px' height='16px' viewBox='0 0 9 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='chevron-right' transform='translate(4.508789, 7.870605) rotate(-180.000000) translate(-4.508789, -7.870605) translate(-0.000000, -0.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M8.674805,7.066406 L1.924805,0.316406 C1.696288,0.105468 1.432619,0 1.133789,0 C0.834959,0 0.57129,0.105468 0.342773,0.316406 C0.114257,0.544923 0,0.808592 0,1.107422 C0,1.406251 0.114257,1.669921 0.342773,1.898438 L6.301758,7.857422 L0.342773,13.816406 C0.114257,14.044923 0,14.308592 0,14.607422 C0,14.906251 0.114257,15.169921 0.342773,15.398438 C0.465821,15.521485 0.584472,15.609375 0.69873,15.662109 C0.812989,15.714844 0.958007,15.741211 1.133789,15.741211 C1.309571,15.741211 1.454589,15.714844 1.568848,15.662109 C1.683106,15.609375 1.801757,15.521485 1.924805,15.398438 L8.674805,8.648438 C8.903321,8.419921 9.017578,8.156251 9.017578,7.857422 C9.017578,7.558592 8.903321,7.294923 8.674805,7.066406 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+			width: 20px;
+			height: 20px;
+			background-size: 20px 20px;
+			background-repeat: no-repeat;
+			margin: 0;
+			padding: 0;
+		}
+	}
 }
+
+.swiper-pagination {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	position: relative !important;
+	display: block;
+	width: auto;
+	.swiper-pagination-bullets {
+		margin: 0;
+
+		.swiper-pagination-bullet {
+			margin: 0;
+			background: #fff !important;
+		}
+	}
+}
+.swiper-pagination-bullet {
+	background: #fff !important;
+			transition: all .2s ease-in-out;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	top: 0;
+	bottom: 0;
+	width: auto;
+	padding: 0 $g-spacing;
+}
+.swiper-pagination-bullet-active {
+				transform: scale(1.5);
+}
+
+
 
 
 // Десктоптна версія 1440px
