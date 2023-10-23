@@ -1,0 +1,91 @@
+// МОЇ ПОСЛУГИ
+
+
+
+// Мобільна версія 480px
+.blog_container {
+    padding: 50px 0;
+}
+
+.blog_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 60px 0;
+}
+
+.blog_heading {
+    color: $color-primary;
+    font-family: "Syne", serif;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.blog-item {
+    position: relative;
+    display: flex;
+    width: 417px;
+    height: 632px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.blog-img {
+    width: 415px;
+    height: 418px;
+}
+.blog-item-teg{
+    color: $color-primary;
+    font-family: "Roboto", serif;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: #F1F1F1;
+    border-radius: 50px;
+    margin: 24px 0 0 0;
+    padding: 12px 24px;
+
+}
+.blog-item-text {
+    color: $color-primary;
+    font-family: "Syne", serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 18px 0;
+    
+}
+
+.blog-item-data{
+    color: $color-primary;
+    font-family: "Roboto", serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+    
+
+    .blog-list {
+        width: 1296px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center
+    }
+
+   
+
+}
+

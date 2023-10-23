@@ -234,6 +234,12 @@ ul {
   background: #FE4519;
 }
 
+.btn_arrow-blog {
+  background: #262626;
+  right: 0;
+  bottom: 210px;
+}
+
 .btn2_color {
   width: 178px;
   height: 55px;
@@ -1705,4 +1711,107 @@ input {
   -webkit-transform: rotateX(-20deg) rotateY(10deg);
           transform: rotateX(-20deg) rotateY(10deg);
   margin: -20px;
+}
+
+.blog_container {
+  padding: 50px 0;
+}
+
+.blog_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 60px 0;
+}
+
+.blog_heading {
+  color: #262626;
+  font-family: "Syne", serif;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.blog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 417px;
+  height: 632px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.blog-img {
+  width: 415px;
+  height: 418px;
+}
+
+.blog-item-teg {
+  color: #262626;
+  font-family: "Roboto", serif;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #F1F1F1;
+  border-radius: 50px;
+  margin: 24px 0 0 0;
+  padding: 12px 24px;
+}
+
+.blog-item-text {
+  color: #262626;
+  font-family: "Syne", serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 18px 0;
+}
+
+.blog-item-data {
+  color: #262626;
+  font-family: "Roboto", serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .blog-list {
+    width: 1296px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }/*# sourceMappingURL=main.css.map */
