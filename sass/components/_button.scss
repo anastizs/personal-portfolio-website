@@ -89,28 +89,40 @@
             1px 4px 6px rgba(0, 0, 0, 0.16);
     }}
 
-        .btn_second {
-            list-style: none;
-            background-color: $color-accent;
-            width: 234px;
-            height: 70px;
-            // margin: auto;
-            padding: 0;
-            border-radius: 50px;
-            border: 2px solid $color-accent;
-            font-family: "Roboto", sans-serif;
-            font-size: 32px;
-            color: $color-white;
-            fill: $color-white;
-            cursor: pointer;
-            padding: 12px 24px;
-    
-            &:hover,
-            &:focus {
-                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                    0px 4px 4px rgba(0, 0, 0, 0.06),
-                    1px 4px 6px rgba(0, 0, 0, 0.16);
-            }
+.btn_second {
+    list-style: none;
+    background-color: $color-accent;
+    width: 234px;
+    height: 70px;
+    // margin: auto;
+    padding: 0;
+    border-radius: 50px;
+    border: 2px solid $color-accent;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    color: $color-white;
+    fill: $color-white;
+    cursor: pointer;
+    padding: 12px 24px;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+}
+.btn_book_call{
+    background-color: $color-accent;
+    width: 129px;
+    height: 49px;
+    border-radius: 50px;
+    border: 1px solid $color-accent;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: $color-white;
+    cursor: pointer;
+
 }
 
 @media screen and (min-width: 768px) {
