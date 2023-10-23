@@ -55,3 +55,23 @@ input{
     padding: 9px;
         
 }
+.line_color{
+    margin: 100px 0;
+    height: 146px;
+    background-color: $color-accent;
+    border-radius: 50px;
+}
+.line_white{
+    display: flex;
+    height: 96px;
+    background-color: $color-white;
+    color: $color-primary;
+    font-family: "Syne", serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(-20deg) rotateY(10deg);
+    margin: -20px;
+}
