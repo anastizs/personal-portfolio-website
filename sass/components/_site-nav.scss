@@ -4,35 +4,31 @@
 .site-nav {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
     margin-bottom: auto;
     
 }
 
 .site-nav__item {
-    font-family: 'Roboto' sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
+   font-family: 'Roboto' sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 1.18;
+   letter-spacing: 0.02em;
 }
 
 .site-nav__link {
-    display: flex;
-    align-items: center;
-    color: $color-primary;
-    transition: color 250ms $timing-function;
-    text-decoration: none;
+   display: flex;
+   align-items: center;
+   color: $color-white;
+   transition: color 250ms $timing-function;
+   text-decoration: none;
 
-    &:hover,
-    &:focus{
-        color: $color-accent;
-    }
-}
-
-.current {
-    color: $color-accent;
+   &:hover,
+   &:focus{
+      color: $color-accent;
+   }
 }
 
 // Планшетна версія 768px

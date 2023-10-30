@@ -2,87 +2,131 @@
 
 
 
-// Мобільна версія 480px
+// Мобільна версія 430px
 .footer {
-    background-color: $color-primary;
-    padding: 105px 0 50px 0;
-    border-radius: 50px;
-    width: 100%;
-    height: 100%;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-
+	display: flex;
+	flex-direction: column;
+   background-color: $color-primary;
+   padding: 50px 0 32px 0;
+   width: 100%;
+   height: 100%;
 }
 
 .footer_title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 0 40px 0;
+   display: flex;
+   flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 32px;
 }
 
 .footer_heading {
-    color: $color-white;
-    font-family: "Syne", serif;
-    font-size: 48px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
+   color: $color-white;
+   font-family: "Syne", serif;
+   font-size: 40px;
+   font-weight: 600;
+   letter-spacing: 0.1em;
+	text-align: center;
 }
 .footer_main{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-    border-top: 1px solid #ffffff40;
-    display: flex;
-    flex-direction: column;
-    outline: 1px solid red;
-    
+   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+   border-top: 1px solid #ffffff40;
+   display: flex;
+   flex-direction: column;
+	padding: 32px 0;
 }
-
-
-// .footer__address {
-//     text-align: center;
-//     color: $color-white;
-//     margin-top: 20px;   
-// }
-
-// .footer__street {
-//     font-style: normal;
-//     font-size: 14px;
-//     line-height: 1.71;
-//     margin-bottom: 9px;
-// }
-
+.footer__text{
+	color: $color-white;
+	opacity: 0.8;
+	font-family: "Roboto", serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 24px 0 32px 0;
+}
 .footer_link-items {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 10px;
-    margin-top: 16px;
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   gap: 10px;
+   margin-top: 16px;
 }
 .footer_link-item{
-    display: flex;
-        padding: 0;
-        border: none;
-        width: 44px;
-        height: 44px;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        transition: color 250ms $timing-function,
-            fill 250ms $timing-function;
-    
-        &:hover,
-        &:focus {
-            fill: $color-accent;
-        }
+   display: flex;
+   padding: 0;
+   border: none;
+   width: 44px;
+   height: 44px;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   transition: color 250ms $timing-function,
+      fill 250ms $timing-function;
+
+      &:hover,
+      &:focus {
+         fill: $color-accent;
+      }
 }
 
-// .footer__mailto {
-//     margin-bottom: 9px;
-// }
+.footer__box{
+	color: $color-white;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 94px;
+	margin: 34px 0;
+}
+.footer__box-navigation{
+	list-style: none;
+	display: inline-flex;
+	flex-direction: column;
+	gap: 22px;
+	&>li{
+		cursor: pointer;
+		&:hover,
+   	&:focus{
+      color: $color-accent;
+   }
+	}
+	
 
+}
+.footer__box-contact{
+	list-style: none;
+	display: inline-flex;
+	flex-direction: column;
+	gap: 22px;
+	&>li{
+		cursor: pointer;
+		transition: color 250ms $timing-function,
+      fill 250ms $timing-function;
+		&:hover,
+   	&:focus{
+      color: $color-accent;
+   }
+	}
+}
+.footer__box-capital{
+	color: $color-accent;
+}
 
+.copyright{
+	display: flex;
+	flex-direction: column;
+	color: $color-white;
+	font-family: Roboto;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	opacity: 0.8;
+	margin: 26px 0;
+	gap: 12px;
+}
 
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {

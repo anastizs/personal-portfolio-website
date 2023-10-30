@@ -1,22 +1,22 @@
 // ЧИМ МИ ЗАЙМАЄМОСЯ
 
-// Мобільна версія 480px
+// Мобільна версія 430px
 .work{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 50px;
 }
 .work_heading{
-    display: flex;
-    width: 325px;
-    color: $color-primary;
-    font-family: "Syne", serif;
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    justify-content: center;
-    margin-bottom: 50px;
+   display: flex;
+   width: 325px;
+   font-family: "Syne", serif;
+	text-align: center;
+   font-size: 40px;
+   font-weight: 600;
+   letter-spacing: 0.1em;
+   justify-content: center;
+   margin-bottom: 50px;
 }
 .work-item{
     display: flex;

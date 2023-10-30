@@ -2,69 +2,66 @@
 
 
 .page-header {
-    position: relative;
-    background-color: $color-primary;
+   position: relative;
+   background-color: $color-primary;
 }
 .header {
-    display: flex;
-    height: 119px;
-    justify-content: space-between;
-    outline: 1px solid orange;
+   display: flex;
+	height: 78px;
+	justify-content: space-between;
+	align-items: center;
 }
 .navigation__btn{
-    z-index: 11;
-    display: inline-flex;
-    width: 48px;
-    height: 48px;
-    margin: 32px 0;
-    fill: $color-white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: color 250ms $timing-function,
-            background-color 250ms $timing-function;
-    padding: 0;
-    
-    background-color: $color-accent;
-    outline: 1px solid red;
+   z-index: 11;
+   display: inline-flex;
+   width: 48px;
+   height: 48px;
+   margin: 32px 0;
+   fill: $color-white;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: color 250ms $timing-function,
+   	background-color 250ms $timing-function;
+   padding: 0;
+   background-color: $color-accent;
 
-    & .icon-close{
-    display: none;
-    }
+   & .icon-close{
+   display: none;
+   }
 
-    &.is-open .icon-close{
-    display: block;
-    }
+   &.is-open .icon-close{
+   display: block;
+   }
 
-    &.is-open .icon-menu {
-    display:none;
-    }
-    
-    &.is-open .icon-close:hover,
-    &.is-open .icon-close:focus {
-    fill: $color-accent;
-     }
+   &.is-open .icon-menu {
+   display:none;
+   }
+
+   &.is-open .icon-close:hover,
+   &.is-open .icon-close:focus {
+   fill: $color-accent;
+   }
    
 }
 
 .menu-container{
-    z-index: 10;
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding-left: 40px;
-    background-color: $color-white;
-    color: $color-primary;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+   z-index: 10;
+   display: none;
+   flex-direction: column;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   padding-left: 15px;
+	padding-top: 78px;
+   background-color: $color-primary;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
-    &.is-open{
-        display: flex;
-    }
-    
+   &.is-open{
+   display: flex;
+   }
 }
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {

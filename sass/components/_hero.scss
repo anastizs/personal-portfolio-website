@@ -1,124 +1,78 @@
 // ЦЕНТРАЛЬНА СТОРІНКА - ГЕРОЙ
 
-// Мобільна версія 480px
+// Мобільна версія 430px
 
 .hero {
-    padding-top: 64px;
-    outline: 1px solid red;
+   padding-top: 64px;
+   outline: 1px solid red;
 
 }
 .hero_container{
-    display: flex;
-    width: 391px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
+   display: flex;
+   width: 391px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
 }
 .hero_text{
-    display: flex;
-    width: 87px;
-    height: 41px;
-        outline: 1px solid black;
-        border-radius: 25px;
-        justify-content: center;
-        align-items: center;
-    font-family: "Syne", serif;
-        font-style: normal;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.62;
-        margin-bottom: 12px;
-        
+   display: flex;
+   width: 87px;
+   height: 41px;
+   outline: 1px solid black;
+   border-radius: 25px;
+   justify-content: center;
+   align-items: center;
+   font-family: "Syne", serif;
+   font-style: normal;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 1.62;
+   margin-bottom: 12px;
 }
 .hero__title {
 
-    font-family: "Syne", sans-serif;
-        font-style: normal;
-        font-size: 28px;
-    font-weight: 700;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.06em;
-    margin-bottom: 81px;
-    color: $color-black;
+   font-family: "Syne", sans-serif;
+   font-style: normal;
+   font-size: 28px;
+   font-weight: 700;
+   line-height: 1.62;
+   text-align: center;
+   letter-spacing: 0.06em;
+   margin-bottom: 81px;
+   color: $color-black;
 }
 .hero__title-span{
-    color: $color-accent;
+   color: $color-accent;
 }
 .hero_background{
-
-    background-color: #fe4519;
-        height: 335px;
-        width: 398px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        margin: auto;
-    background-color: $color-accent;
-    border-top-left-radius: 580px;
-    border-top-right-radius: 580px;
+	background-color: #fe4519;
+   height: 335px;
+   width: 398px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   margin: auto;
+   background-color: $color-accent;
+   border-top-left-radius: 580px;
+   border-top-right-radius: 580px;
 
 }
 .hero_button-list {
-    list-style: none;
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-        background-color: #fff;
-        width: 378px;
-        height: 67px;
-        margin: 16px auto;
-        padding: 0;
-        border-radius: 50px;
-    
+   list-style: none;
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+   width: 378px;
+   height: 67px;
+   margin: 16px 10px;
+   padding: 0;
+   border-radius: 50px;
 
 }
-.hero__btn1 {
-    list-style: none;
-        background-color: $color-accent;
-        width: 175px;
-        height: 54px;
-        margin: auto;
-        padding: 0;
-        border-radius: 50px;
-        border-color: inherit;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-size: 25px;
-        color: $color-white;
-        cursor: pointer;
-    padding: 12px 24px;
-&:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                0px 4px 4px rgba(0, 0, 0, 0.06),
-                1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
-}
-.hero__btn2 {
-    list-style: none;
-    background-color: $color-white;
-    width: 175px;
-    height: 54px;
-    margin: auto;
-    padding: 0;
-    border-radius: 50px;
-    border-color: $color-primary;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 25px;
-    color: $color-black;
-    cursor: pointer;
-    padding: 12px 24px;
-    &:hover,
-        &:focus {
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                0px 4px 4px rgba(0, 0, 0, 0.06),
-                1px 4px 6px rgba(0, 0, 0, 0.16);
-        }
-}
+
 
 
 // Планшетна версія 768px

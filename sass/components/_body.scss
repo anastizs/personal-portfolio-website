@@ -1,52 +1,41 @@
 body{
-    color: $color-primary;
-    background-color: $color-white;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 0.03em;
-    
+   color: $color-primary;
+   background-color: $color-white;
+   font-family: "Roboto", sans-serif;
+   letter-spacing: 0.03em;
 }
- 
+
 h1, h2, h3, h4, h5, h6, ul, p{
-    margin: 0;
-    padding: 0;
+   margin: 0;
+   padding: 0;
 }
 img{
-    display: block;
-    max-width: 100%;
-    height: auto;
+   display: block;
+   max-width: 100%;
+   height: auto;
+	margin: 0;
+   padding: 0;
 }
 .container{
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-    
-
-    @media screen and (min-width: 440px) {
-        width: 440px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 16px;
+   padding-right: 16px;
 }
 
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+@media screen and (min-width: 430px) {
+   .container{
+		width: 430px;
+   }
 }
-// .section {
-//     padding-top: 16px;
-//     padding-bottom: 16px;
-    
-//     @media screen and (min-width: 1200px) {
-//         padding-top: 72px;
-//         padding-bottom: 72px;
-//     }
 
-// }
+@media screen and (min-width: 768px) {
+	.container{
+		width: 768px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.container{
+		width: 1200px;
+	}
+}

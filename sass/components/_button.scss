@@ -1,133 +1,130 @@
 .btn1 {
-    list-style: none;
-    background-color: $color-accent;
-    width: 175px;
-    height: 54px;
-    margin: auto;
-    padding: 0;
-    border-radius: 50px;
-    border: 2px solid $color-accent;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 25px;
-    color: $color-white;
-    fill: $color-white;
-    cursor: pointer;
-    padding: 12px 24px;
+   list-style: none;
+   background-color: $color-accent;
+   width: 175px;
+   height: 54px;
+   margin: auto;
+   border-radius: 50px;
+   border: none;
+   font-family: "Roboto", sans-serif;
+   font-weight: 500;
+   font-size: 25px;
+   color: $color-white;
+   fill: $color-white;
+   cursor: pointer;
+   padding: 6px;
 
-    &:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+   &:hover,
+   &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
             0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+   }
 }
 
 .btn2 {
-    list-style: none;
-    background-color: $color-white;
-    width: 175px;
-    height: 54px;
-    margin: auto;
-    padding: 0;
-    border-radius: 50px;
-    border: 2px solid $color-primary;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 25px;
-    color: $color-black;
-    cursor: pointer;
-    padding: 12px 24px;
+   list-style: none;
+   background-color: $color-white;
+   width: 175px;
+   height: 54px;
+   margin: auto;
+   border-radius: 50px;
+   border: 2px solid $color-primary;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+   font-size: 25px;
+   color: $color-black;
+   cursor: pointer;
+   padding: 6px;
 
-    &:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-            0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+   &:hover,
+   &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+         0px 4px 4px rgba(0, 0, 0, 0.06),
+         1px 4px 6px rgba(0, 0, 0, 0.16);
+   }
 }
 
 .btn_arrow {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 109px;
-    height: 109px;
-    border-radius: 50px;
-    background: rgba(116, 115, 115, 0.1);
-    border: none;
-    justify-content: center;
-    align-content: center;
-    cursor: pointer;
-    fill: $color-white;
-    transition: $timing-function;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   width: 109px;
+   height: 109px;
+   border-radius: 50px;
+   background: rgba(116, 115, 115, 0.1);
+   border: none;
+   justify-content: center;
+   align-content: center;
+   cursor: pointer;
+   fill: $color-white;
+   transition: $timing-function;
 
-    &:hover,
-    &:focus {
-        background: $color-accent;
-    }
+   &:hover,
+   &:focus {
+      background: $color-accent;
+   }
 }
 .btn_arrow-blog {
-    background: $color-primary;
-    right: 0;
-    bottom: 210px;
-    }
+   background: $color-primary;
+   right: 0;
+   bottom: 180px;
+   }
 
 .btn2_color{
-    width: 178px;
-    height: 55px;
-    border-radius: 50px;
-    border: 2px solid $color-accent;
-    font-size: 32px;
-    padding: 12px 24px;
-    font-family: "Roboto", serif;
-    font-size: 24px;
-    font-weight: 500;
-    color: $color-accent;
-    cursor: pointer;
+   width: 178px;
+   height: 55px;
+   border-radius: 50px;
+   border: 2px solid $color-accent;
+   font-size: 32px;
+   padding: 12px 24px;
+   font-family: "Roboto", serif;
+   font-size: 24px;
+   font-weight: 500;
+   color: $color-accent;
+   cursor: pointer;
 
-    &:hover,
-    &:focus {
-        background-color: $color-accent;
-        color: $color-white;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-            0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
-    }}
+   &:hover,
+   &:focus {
+   	background-color: $color-accent;
+      color: $color-white;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+         0px 4px 4px rgba(0, 0, 0, 0.06),
+         1px 4px 6px rgba(0, 0, 0, 0.16);
+   }}
 
 .btn_second {
-    list-style: none;
-    background-color: $color-accent;
-    width: 234px;
-    height: 70px;
-    // margin: auto;
-    padding: 0;
-    border-radius: 50px;
-    border: 2px solid $color-accent;
-    font-family: "Roboto", sans-serif;
-    font-size: 32px;
-    color: $color-white;
-    fill: $color-white;
-    cursor: pointer;
-    padding: 12px 24px;
+   list-style: none;
+   background-color: $color-accent;
+   width: 234px;
+   height: 70px;
+   padding: 0;
+   border-radius: 50px;
+   border: 2px solid $color-accent;
+   font-family: "Roboto", sans-serif;
+   font-size: 32px;
+   color: $color-white;
+   fill: $color-white;
+   cursor: pointer;
+   padding: 12px 24px;
 
-    &:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-            0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
-        }
+   &:hover,
+   &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+      	0px 4px 4px rgba(0, 0, 0, 0.06),
+         1px 4px 6px rgba(0, 0, 0, 0.16);
+      }
 }
 .btn_book_call{
-    background-color: $color-accent;
-    width: 129px;
-    height: 49px;
-    border-radius: 50px;
-    border: 1px solid $color-accent;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    color: $color-white;
-    cursor: pointer;
+   background-color: $color-accent;
+   width: 142px;
+   height: 44px;
+   border-radius: 50px;
+   border: none;
+   font-family: "Roboto", sans-serif;
+   font-size: 16px;
+   color: $color-white;
+   cursor: pointer;
 
 }
 

@@ -1,56 +1,55 @@
 // Portfolio
 
-// Мобільна версія 480px
+// Мобільна версія 430px
 
 .portfolio_box{
-    display: flex;
-    width: 1296px;
-    margin-top: 54px;
-    justify-content: space-between;
-    align-items: center;
+   display: flex;
+	flex-direction: column;
+   // width: 1296px;
+   margin-top: 50px;
 }
 .portfolio_heading {
-    width: 50%;
-    color: $color-black;
-    font-family: "Syne", serif;
-    font-size: 40px;
-    font-weight: 600;
-    
+   // width: 50%;
+   color: $color-black;
+   font-family: "Syne", serif;
+   font-size: 40px;
+   font-weight: 600;
+	margin-bottom: 36px;
 }
 
 .portfolio_heading-span {
-    color: $color-accent;
+   color: $color-accent;
 }
 .card_container{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    margin: 50px auto 18px auto;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   margin: 40px auto 18px auto;
 }
 .card_items{
-    display: flex;
-    justify-content: space-around;
+   display: flex;
+	flex-wrap: wrap;
 
 }
 .card_item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $color-primary;
-    font-family: "Roboto", serif;
-    font-size: 24px;
-    font-weight: 400;
-    background-color: #F1F1F1;
-    border-radius: 50px;
-    margin: 0 auto 32px auto;
-    padding: 12px 24px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: $color-secondary;
+   font-family: "Roboto", serif;
+   font-size: 16px;
+   font-weight: 400;
+   background-color: #F1F1F1;
+   border-radius: 50px;
+   margin: 0 auto 12px auto;
+   padding: 12px;
 }
 .card_heading{
-    color: $color-primary;
-    font-family: "Syne", serif;
-    font-weight: 600;
-    font-size: 36px;
-    margin-bottom: 18px;
+   color: $color-primary;
+   font-family: "Syne", serif;
+   font-weight: 600;
+   font-size: 24px;
+   margin-bottom: 18px;
 }
 
 // Configuration parameters
@@ -63,61 +62,61 @@ $slide-separation: 40px;
 $distance: 1000px;
 
 #carousel {
-    perspective: $distance;
-    overflow: hidden;
+   perspective: $distance;
+   overflow: hidden;
 
-    #scene {
-        width: $slide-width;
-        margin: 40px auto 0 auto;
-        transform-style: preserve-3d;
-        transition: transform 0.9s;
+   #scene {
+   	width: $slide-width;
+   	margin: 40px auto 0 auto;
+      transform-style: preserve-3d;
+      transition: transform 0.9s;
 
-        .carousel_item {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 0 (calc($slide-separation / 2)) 0 (calc($slide-separation / 4));
-            backface-visibility: hidden;
+      .carousel_item {
+         width: 100%;
+         box-sizing: border-box;
+         padding: 0 (calc($slide-separation / 2)) 0 (calc($slide-separation / 4));
+         backface-visibility: hidden;
 
-            &:not(:first-of-type) {
-                position: absolute;
-                left: 0;
-                top: 0;
+         &:not(:first-of-type) {
+            position: absolute;
+            left: 0;
+            top: 0;
             }
-        }
-    }
+      }
+   }
 
-    #carousel_btn {
-        width: 146px;
-        margin: 20px auto 20px auto;
-        user-select: none;
-    }
+   #carousel_btn {
+   	width: 146px;
+      margin: 20px auto 20px auto;
+      user-select: none;
+   }
 
-    #carousel_btn .btn {
-        width: 68px;
-        height: 45px;
-        line-height: 42px;
-        padding-left: 16px;
-        box-sizing: border-box;
-        border-radius: 50px;
-        float: left;
-        border: 1px solid $color-accent;
-        color: #2f2f2f;
-        font-family: "Roboto", serif;
-        font-size: 14px;
-        cursor: pointer;
-        transition: all 0.9s;
-        margin-bottom: 90px;
-    }
+   #carousel_btn .btn {
+      width: 68px;
+      height: 45px;
+      line-height: 42px;
+      padding-left: 16px;
+      box-sizing: border-box;
+      border-radius: 50px;
+      float: left;
+      border: 1px solid $color-accent;
+      color: #2f2f2f;
+      font-family: "Roboto", serif;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.9s;
+      margin-bottom: 90px;
+   }
 
-    #carousel_btn .btn:hover {
-        background-color: $color-accent;
-                color: $color-white;
-                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                    0px 4px 4px rgba(0, 0, 0, 0.06),
-                    1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+   #carousel_btn .btn:hover {
+      background-color: $color-accent;
+      color: $color-white;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+         0px 4px 4px rgba(0, 0, 0, 0.06),
+         1px 4px 6px rgba(0, 0, 0, 0.16);
+   }
 
-    #carousel_btn>div:first-child {
-        margin-right: 10px;
-    }
+   #carousel_btn>div:first-child {
+      margin-right: 10px;
+   }
 }

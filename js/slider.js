@@ -59,7 +59,7 @@ function carouselRUN() {
       scene.style.transform = `rotateY(${
         curr_carousel_items_Arrey * -theta
       }rad)`;
-    }, 6000);
+    }, 10000);
   }
 
   function setupNavigation() {
