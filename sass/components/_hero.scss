@@ -80,66 +80,63 @@
     .hero {
         padding-top: 57px;
     }
-        .hero_container {
-            width: 640px;
+    .hero_container {
+        width: 640px;
             
-        }
-        .hero_text {
-            width: 102px;
-            height: 48px;
-            font-size: 24px;
-            margin-bottom: 0;
-        }
+    }
+    .hero_text {
+        width: 102px;
+        height: 48px;
+        font-size: 24px;
+        margin-bottom: 0;
+    }
     
-        .hero__title {
-            font-size: 46px;
-            font-weight: 500;
-            margin-bottom: 198px;
-        }
+    .hero__title {
+        font-size: 46px;
+        font-weight: 600;
+        margin-bottom: 198px;
+    }
     
-        .hero__title-span {
-            color: $color-accent;
-        }
+    .hero__title-span {
+        color: $color-accent;
+    }
     
-        .hero_background {
-            width: 560px;
-            border-top-left-radius: 560px;
-            border-top-right-radius: 560px;
-        }
-    
-        .hero_button-list {
-            gap: 12px;
-            width: 476px;
-            height: 86px;
-            margin: 8px auto;
-            padding: 0;
-            border-radius: 50px;
-        }
-    
-        .hero__btn1 {
-            width: 224px;
-            height: 70px;
-            font-size: 32px;
-            padding: 12px 24px;
-        }
-    
-        .hero__btn2 {
-            width: 224px;
-                height: 70px;
-                font-size: 32px;
-                padding: 12px 24px;
-        }
-}
-    
-
-
-
-
-// Десктоптна версія 1440px
-@media screen and (min-width: 1440px) {
     .hero_background {
-            width: 752px;
-            border-top-left-radius: 420px;
-            border-top-right-radius: 420px;
-        }
+        width: 560px;
+        border-top-left-radius: 560px;
+        border-top-right-radius: 560px;
+    }
+    
+    .hero_button-list {
+        gap: 12px;
+        width: 476px;
+        height: 86px;
+        margin: 8px auto;
+        padding: 0;
+        border-radius: 50px;
+    }
+    
+    .hero__btn1 {
+        width: 224px;
+        height: 70px;
+        font-size: 32px;
+        padding: 12px 24px;
+    }
+    
+    .hero__btn2 {
+        width: 224px;
+        height: 70px;
+        font-size: 32px;
+        padding: 12px 24px;
+    }
+}
+   
+
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {
+    .hero_background {
+        width: 752px;
+        border-top-left-radius: 420px;
+        border-top-right-radius: 420px;
+    }
 }

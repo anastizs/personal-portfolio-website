@@ -73,3 +73,35 @@ input{
    transform: rotateX(328deg) rotateY(8deg);
    margin: -10px;
 }
+
+// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+
+
+   .email_heading {
+      font-size: 48px;
+   }
+
+
+   .input {
+      width: 540px;
+   }
+
+   input {
+      width: 380px;
+   }
+
+
+   .line_color {
+      height: 80px;
+      border-radius: 50px;
+   }
+
+   .line_white {
+      height: 60px;
+      font-size: 24px;
+   }
+}
+
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {}

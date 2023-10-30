@@ -1,6 +1,6 @@
 // ЧИМ МИ ЗАЙМАЄМОСЯ
 
-// Мобільна версія 430px
+// Мобільна версія 390px
 .work{
    display: flex;
    flex-direction: column;
@@ -24,8 +24,6 @@
     flex-direction: column;
     padding-bottom: 48px;
     border-left: 1px dashed $color-primary;
-
-    // outline: 1px solid red;
 }
 .work-item-box{
     margin-bottom: 24px;
@@ -47,44 +45,42 @@ font-family: "Roboto", serif;
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {
 .work {
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
-    .work_heading {
-        width: 600px;
-        font-size: 48px;
-    }
+.work_heading {
+    width: 600px;
+    font-size: 48px;
+}
 
-    .work-item {
-        display: flex;
-        width: 736px;
-        flex-direction: row;
-        padding-bottom: 60px;
-        justify-content: space-between;
+.work-item {
+    display: flex;
+    width: 736px;
+    flex-direction: row;
+    padding-bottom: 60px;
+    justify-content: space-between;
 
-        // outline: 1px solid red;
-    }
+}
 
-    .work-item-box {
-        width: 642px;
-        margin-bottom: 24px;
-        margin-left: 28px;
-    }
+.work-item-box {
+    width: 642px;
+    margin-bottom: 24px;
+    margin-left: 28px;
+}
 
-    .work-title {
-        font-size: 36px;
+.work-title {
+    font-size: 36px;
+}
 
-    }
-
-    .work-text {
-        font-size: 24px;
-    }
+.work-text {
+    font-size: 24px;
+}
 }
 
 
-// Десктоптна версія 1440px
-@media screen and (min-width: 1440px) {
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {
 .work {
     margin-top: 100px;
     margin-bottom: 100px;

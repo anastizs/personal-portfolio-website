@@ -1,14 +1,11 @@
 // ЧИМ МИ ЗАЙМАЄМОСЯ
 
-// Мобільна версія 480px
+// Мобільна версія 390px
 .why {
    background-color: #F1F1F1;
    padding: 50px 0;
 }
-.why_img{
-//    width: 400px;
-//    height: 400px;
-}
+
 .why_heading{
    color: $color-black;
    font-family: "Syne", serif;
@@ -75,121 +72,119 @@
     border-radius: 50px;
 }
 
-    .why_ul {
-        display: flex;
-        width: 736px;
-        height: 360px;
-        gap: 16px;
+.why_ul {
+    display: flex;
+    width: 736px;
+    height: 360px;
+    gap: 16px;
+}
 
-    }
+.why_img {
+    width: 360px;
+    height: 360px;
+}
 
-    .why_img {
-        width: 360px;
-        height: 360px;
-    }
+.why_heading {
+    font-size: 32px;
+    margin-top: 32px;
+}
 
-    .why_heading {
-        font-size: 32px;
-        margin-top: 32px;
-    }
+.why_heading-span {
+    color: $color-accent;
+}
 
-    .why_heading-span {
-        color: $color-accent;
-    }
+.why-text {
+    font-size: 18px;
+    margin-top: 18px;
+}
 
-    .why-text {
-        font-size: 18px;
-        margin-top: 18px;
-    }
+.why_list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    gap: 16px;
+}
 
-    .why_list {
-        display: flex;
-        flex-direction: row;
-        margin-top: 18px;
-        margin-bottom: 18px;
-        gap: 16px;
-    }
+.why_ul-item {
+    width: 360px;
+}
 
-    .why_ul-item {
-        width: 360px;
-    }
+.why_item-h3 {
+    font-size: 28px;
+}
 
-    .why_item-h3 {
-        font-size: 28px;
-    }
+.why_item-h4 {
+    font-size: 18px;
+}
 
-    .why_item-h4 {
-        font-size: 18px;
-    }
-
-    .why_button {
-        width: 178px;
-        height: 55px;
-        font-size: 24px;
-        font-size: 24px;
-    }
+.why_button {
+    width: 178px;
+    height: 55px;
+    font-size: 24px;
+    font-size: 24px;
+}
 }
 
 
-// Десктоптна версія 1440px
-@media screen and (min-width: 1440px) {
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {
 .why {
-        background-color: #F1F1F1;
-        padding: 118px 0;
-        border-radius: 50px;
-    }
+    background-color: #F1F1F1;
+    padding: 118px 0;
+    border-radius: 50px;
+}
 
-    .why_ul {
-        display: flex;
-        width: 1205px;
-        height: 570px;
-        gap: 109px;
+.why_ul {
+    display: flex;
+    width: 1205px;
+    height: 570px;
+    gap: 109px;
+}
 
-    }
+.why_img {
+    width: 570px;
+    height: 570px;
+}
 
-    .why_img {
-        width: 570px;
-        height: 570px;
-    }
+.why_heading {
+    font-size: 48px;
+    margin-top: 32px;
+}
 
-    .why_heading {
-        font-size: 48px;
-        margin-top: 32px;
-    }
+.why_heading-span {
+    color: $color-accent;
+}
 
-    .why_heading-span {
-        color: $color-accent;
-    }
+.why-text {
+    font-size: 24px;
+    margin-top: 24px;
+}
 
-    .why-text {
-        font-size: 24px;
-        margin-top: 24px;
-    }
+.why_list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    margin-bottom: 36px;
+    gap: 58px;
+}
 
-    .why_list {
-        display: flex;
-        flex-direction: row;
-        margin-top: 24px;
-        margin-bottom: 36px;
-        gap: 58px;
-    }
+.why_ul-item {
+    width: 570px;
+}
 
-    .why_ul-item {
-        width: 570px;
-    }
+.why_item-h3 {
+    font-size: 36px;
+}
 
-    .why_item-h3 {
-        font-size: 36px;
-    }
+.why_item-h4 {
+    font-size: 24px;
+}
 
-    .why_item-h4 {
-        font-size: 24px;
-    }
-
-    .why_button {
-        width: 224px;
-        height: 70px;
-        font-size: 32px;
-        font-size: 32px;
-    }
+.why_button {
+    width: 224px;
+    height: 70px;
+    font-size: 32px;
+    font-size: 32px;
+}
 }

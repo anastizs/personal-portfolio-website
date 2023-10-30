@@ -1,6 +1,6 @@
 
 
-// Мобільна версія 430px
+// Мобільна версія 390px
 .feedback_container{
    background-color: $color-primary;
    padding: 50px 0;
@@ -184,46 +184,26 @@
 
 
 
+// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+.feedback_container {
+	border-radius: 50px;
+}
 
-// Десктоптна версія 1440px
-@media screen and (min-width: 1440px) {
-// .service_container {
-//         padding: 100px 0;
-//     }
-
-   
-//     .service_heading {
-//         font-size: 48px;
-//     }
+.feedback_heading {
+	font-size: 48px;
+	font-weight: 600;
+}
 
 
-//     .service_text {
-//         width: 435px;
-//         font-size: 20px;
-//         margin-top: 0;
+.feedback_text {
+	font-size: 24px;
+}
 
-//     }
+.wrapper {
+	width: 768px;
+}
+}
 
-//     .service-list {
-//         display: flex;
-//         flex-direction: row;
-//         flex-wrap: nowrap;
-//         gap: 10px;
-//     }
-
-//     .service-item {
-//         width: 415px;
-//         height: 498px;
-//         margin-top: 81px;
-//     }
-
-//     .service-item-text {
-//         font-size: 36px;
-//     }
-
-//     .service-img {
-//         width: 415px;
-//         height: 340px;
-//         margin-top: 51px;
-//     }
-    }
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {}
