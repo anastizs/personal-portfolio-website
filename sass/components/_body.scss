@@ -17,16 +17,16 @@ img{
 	margin: 0;
    padding: 0;
 }
-.container{
-   margin-right: auto;
-   margin-left: auto;
-   padding-left: 16px;
-   padding-right: 16px;
-}
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 390px) {
    .container{
-		width: 430px;
+		width: 390px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 16px;
+      padding-right: 16px;
+      
+         outline: 1px solid red;
    }
 }
 
