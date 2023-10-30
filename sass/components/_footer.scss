@@ -2,7 +2,7 @@
 
 
 
-// Мобільна версія 430px
+// Мобільна версія 390px
 .footer {
 	display: flex;
 	flex-direction: column;
@@ -93,7 +93,6 @@
    }
 	}
 	
-
 }
 .footer__box-contact{
 	list-style: none;
@@ -130,35 +129,79 @@
 
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {
-// .footer-container {
-//     display: flex;
-//     padding: 0;
-// }
-// .footer__item {
-//     margin-left: 61px;
-//     margin-right: auto;
-// }
+
+.footer_title {
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
+.footer_heading {
+	width: 60%;
+	text-align: start;
+}
+.footer_main{
+   display: flex;
+   flex-direction: row;
+	gap: 24px;
+}
+.footer__text{
+	font-size: 14px;
+}
+.footer_link-items {
+   gap: 10px;
+}
 
+.footer__box{
+	color: $color-white;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 94px;
+	margin: 34px 0;
+}
+.footer__box-navigation{
+	list-style: none;
+	display: inline-flex;
+	flex-direction: column;
+	gap: 22px;
+	&>li{
+		cursor: pointer;
+		&:hover,
+   	&:focus{
+      color: $color-accent;
+   }
+	}
+	
+}
+.footer__box-contact{
+	list-style: none;
+	display: inline-flex;
+	flex-direction: column;
+	gap: 22px;
+	&>li{
+		cursor: pointer;
+		transition: color 250ms $timing-function,
+      fill 250ms $timing-function;
+		&:hover,
+   	&:focus{
+      color: $color-accent;
+   }
+	}
+}
+.footer__box-capital{
+	color: $color-accent;
+}
 
-
+.copyright{
+	display: flex;
+	flex-direction: row;
+	font-size: 16px;
+	gap:24px;
+}
+}
 
 // Десктоптна версія 1200px
 @media screen and (min-width: 1200px) {
-// .footer__main {
-//     display: flex;
-// }
-// .footer__item {
-//     width: 231px;
-//     text-align: left;
-//     margin-left: 0;
-//     margin-right: 0;
-// }
-// .footer__address {
-//     text-align: left;
-
-// }
 }
-
-
