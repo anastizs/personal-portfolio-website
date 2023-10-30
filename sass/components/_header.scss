@@ -95,18 +95,8 @@
 }
 // Десктопна версія 1200px
 @media screen and (min-width: 1200px) {
-    .header {
-        height: 124px;
-        
-    }
-
-    .menu-container {
-        height: 85px;
-        padding: 22px 85px;
-        margin: 39px 0;
-        width: 1296px;
-        
-         
-    }
-
+.menu-container {
+        height: 88px;
 }
+}
+

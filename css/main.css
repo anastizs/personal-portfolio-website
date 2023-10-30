@@ -26,7 +26,6 @@ img {
     margin-left: auto;
     padding-left: 16px;
     padding-right: 16px;
-    outline: 1px solid red;
   }
 }
 @media screen and (min-width: 768px) {
@@ -110,23 +109,11 @@ img {
     margin: auto 0;
   }
 }
-@media screen and (min-width: 1440px) {
-  .logo {
-    display: none;
-  }
-  .logo__span {
-    display: none;
-  }
+@media screen and (min-width: 1200px) {
   .site-nav__logo-span {
-    width: 41px;
-    height: 41px;
-    font-size: 28px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
   }
 }
 .btn1 {
@@ -318,6 +305,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .site-nav {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -357,13 +345,14 @@ img {
   .site-nav__link:hover, .site-nav__link:focus {
     color: #FE4519;
   }
-  .current {
-    color: #FE4519;
-  }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .site-nav {
-    gap: 70px;
+    width: 100%;
+    gap: 90px;
+  }
+  .site-nav__item {
+    font-size: 24px;
   }
 }
 .page-header {
@@ -478,14 +467,8 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .header {
-    height: 124px;
-  }
   .menu-container {
-    height: 85px;
-    padding: 22px 85px;
-    margin: 39px 0;
-    width: 1296px;
+    height: 88px;
   }
 }
 .hero {
@@ -860,7 +843,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 325px;
   font-family: "Syne", serif;
   text-align: center;
   font-size: 40px;
@@ -909,14 +891,13 @@ img {
     margin-bottom: 100px;
   }
   .work_heading {
-    width: 600px;
     font-size: 48px;
   }
   .work-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 736px;
+    width: 724px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -927,7 +908,6 @@ img {
             justify-content: space-between;
   }
   .work-item-box {
-    width: 642px;
     margin-bottom: 24px;
     margin-left: 28px;
   }
@@ -940,18 +920,17 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .work {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .work_heading {
-    width: 600px;
     font-size: 48px;
   }
   .work-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 1249px;
+    width: 1120px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1538,6 +1517,22 @@ img {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .feedback_container {
+    border-radius: 50px;
+  }
+  .feedback_heading {
+    width: 616px;
+    margin: 0 auto;
+  }
+  .feedback_text {
+    width: 616px;
+    margin: 24px auto;
+  }
+  .wrapper {
+    width: 1170px;
+  }
+}
 .email_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1663,6 +1658,25 @@ input {
     font-size: 24px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .email_heading {
+    width: 662px;
+    font-size: 48px;
+  }
+  .input {
+    width: 540px;
+  }
+  input {
+    width: 380px;
+  }
+  .line_color {
+    height: 145px;
+  }
+  .line_white {
+    height: 80px;
+    font-size: 40px;
+  }
+}
 .blog_title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1783,6 +1797,17 @@ input {
   }
   .blog-img {
     width: 356px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog-item {
+    width: 382px;
+    height: 580px;
+    margin-top: 24px;
+  }
+  .blog-img {
+    width: 392px;
+    height: 390px;
   }
 }
 .footer {
@@ -2057,6 +2082,34 @@ input {
             flex-direction: row;
     font-size: 16px;
     gap: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer_main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 32px;
+  }
+  .footer__text {
+    font-size: 18px;
+  }
+  .footer_link-items {
+    gap: 16px;
+  }
+  .footer__box {
+    width: 50%;
+  }
+  .copyright {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 18px;
   }
 }
 .footer__logo {

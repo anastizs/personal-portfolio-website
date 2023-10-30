@@ -107,4 +107,17 @@
 
 }
 // Десктоптна версія 1200px
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+
+.blog-item {
+   width: 382px;
+   height: 580px;
+   margin-top: 24px;
+}
+
+
+.blog-img {
+   width: 392px;
+   height: 390px;
+}
+}

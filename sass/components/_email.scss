@@ -76,8 +76,6 @@ input{
 
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {
-
-
    .email_heading {
       font-size: 48px;
    }
@@ -104,4 +102,28 @@ input{
 }
 
 // Десктоптна версія 1200px
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+   .email_heading {
+      width: 662px;
+      font-size: 48px;
+   }
+
+
+   .input {
+      width: 540px;
+   }
+
+   input {
+      width: 380px;
+   }
+
+
+   .line_color {
+      height: 145px;
+   }
+
+   .line_white {
+      height: 80px;
+      font-size: 40px;
+   }
+}

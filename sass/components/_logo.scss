@@ -60,20 +60,11 @@
 }
 }
 
-// Планшетна версія 1440px
-@media screen and (min-width: 1440px) {
-.logo {
-   display: none;
-}
-.logo__span {
-   display: none;
-}
-
+// Планшетна версія 1200px
+@media screen and (min-width: 1200px) {
 .site-nav__logo-span {
-   width: 41px;
-   height: 41px;
-   font-size: 28px;
-   align-items: center;
-   justify-content: center;
+   width: 60px;
+   height: 60px;
+   font-size: 36px;
 }
 }

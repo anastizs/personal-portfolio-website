@@ -206,4 +206,23 @@
 }
 
 // Десктоптна версія 1200px
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+.feedback_container {
+	border-radius: 50px;
+}
+
+.feedback_heading {
+	width: 616px;
+	margin: 0 auto;
+}
+
+
+.feedback_text {
+	width: 616px;
+	margin: 24px auto;
+}
+
+.wrapper {
+	width: 1170px;
+}
+}
