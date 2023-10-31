@@ -19,6 +19,7 @@ img {
   padding: 0;
 }
 
+<<<<<<< Updated upstream
 @media screen and (min-width: 390px) {
   .container {
     width: 390px;
@@ -26,6 +27,18 @@ img {
     margin-left: auto;
     padding-left: 16px;
     padding-right: 16px;
+=======
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 390px) {
+  .container {
+    width: 390px;
+>>>>>>> Stashed changes
   }
 }
 @media screen and (min-width: 768px) {

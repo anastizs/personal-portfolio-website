@@ -5,7 +5,7 @@ body{
    letter-spacing: 0.03em;
 }
 
-h1, h2, h3, h4, h5, h6, ul, p,li{
+h1, h2, h3, h4, h5, h6, ul, p, li{
    margin: 0;
    padding: 0;
 	list-style: none;
@@ -21,10 +21,13 @@ img{
 @media screen and (min-width: 390px) {
    .container{
 		width: 390px;
+<<<<<<< Updated upstream
       margin-right: auto;
       margin-left: auto;
       padding-left: 16px;
       padding-right: 16px;
+=======
+>>>>>>> Stashed changes
    }
 }
 
