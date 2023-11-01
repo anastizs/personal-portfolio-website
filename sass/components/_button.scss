@@ -129,34 +129,32 @@
 }
 
 @media screen and (min-width: 768px) {
-    .btn1 {
-            width: 224px;
-            height: 70px;
-            font-size: 32px;
-            padding: 12px 24px;
-        }
-    
-    .btn2 {
-            width: 224px;
-            height: 70px;
-            font-size: 32px;
-            padding: 12px 24px;
-        }
-        .btn2_color {
-            width: 178px;
-            height: 55px;
-            font-size: 24px;
-            font-size: 24px;
-        }
-}
-// Десктоптна версія 1440px
-@media screen and (min-width: 1440px) {
-  
+   .btn1 {
+      width: 224px;
+      height: 70px;
+      font-size: 32px;
+      padding: 12px 24px;
+   }
 
-    .btn2_color {
-        width: 224px;
-        height: 70px;
-        font-size: 32px;
-        font-size: 32px;
-    }
+   .btn2 {
+      width: 224px;
+      height: 70px;
+      font-size: 32px;
+      padding: 12px 24px;
+   }
+   .btn2_color {
+      width: 178px;
+      height: 55px;
+      font-size: 24px;
+      font-size: 24px;
+   }
+}
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {
+   .btn2_color {
+      width: 224px;
+      height: 70px;
+      font-size: 32px;
+      font-size: 32px;
+   }
 }

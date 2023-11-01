@@ -4,6 +4,7 @@
 
 .hero {
    padding-top: 64px;
+	position: relative;
    
 
 }
@@ -46,9 +47,8 @@
    color: $color-accent;
 }
 .hero_background{
-    background-color: #fe4519;
-   height: 335px;
-//    width: 360px;
+   background-color: #fe4519;
+   height: 256px;
    display: flex;
    align-items: flex-end;
    justify-content: center;
@@ -58,16 +58,18 @@
    border-top-right-radius: 580px;
 
 }
+
 .hero_button-list {
+	position: absolute;
+	bottom: 0;
    list-style: none;
    display: flex;
    gap: 10px;
    justify-content: center;
    align-items: center;
    background-color: #fff;
-//    width: 360px;
    height: 67px;
-   margin: 16px 10px;
+   margin: 16px 0;
    padding: 6px;
    border-radius: 50px;
 
@@ -77,66 +79,57 @@
 
 // Планшетна версія 768px
 @media screen and (min-width: 768px){
-    .hero {
-        padding-top: 57px;
-    }
-    .hero_container {
-        width: 640px;
-            
-    }
-    .hero_text {
-        width: 102px;
-        height: 48px;
-        font-size: 24px;
-        margin-bottom: 0;
-    }
-    
-    .hero__title {
-        font-size: 46px;
-        font-weight: 600;
-        margin-bottom: 198px;
-    }
-    
-    .hero__title-span {
-        color: $color-accent;
-    }
-    
-    .hero_background {
-        width: 560px;
-        border-top-left-radius: 560px;
-        border-top-right-radius: 560px;
-    }
-    
-    .hero_button-list {
-        gap: 12px;
-        width: 476px;
-        height: 86px;
-        margin: 8px auto;
-        padding: 0;
-        border-radius: 50px;
-    }
-    
-    .hero__btn1 {
-        width: 224px;
-        height: 70px;
-        font-size: 32px;
-        padding: 12px 24px;
-    }
-    
-    .hero__btn2 {
-        width: 224px;
-        height: 70px;
-        font-size: 32px;
-        padding: 12px 24px;
-    }
+   .hero {
+   	padding-top: 57px;
+   }
+   .hero_container {
+      width: 640px;
+   }
+   .hero_text {
+      width: 102px;
+      height: 48px;
+      font-size: 24px;
+      margin-bottom: 0;
+   }
+   .hero__title {
+      font-size: 46px;
+      font-weight: 600;
+      margin-bottom: 198px;
+   }
+
+   .hero__title-span {
+      color: $color-accent;
+   }
+
+   .hero_background {
+      width: 560px;
+		height: 340px;
+      border-top-left-radius: 560px;
+      border-top-right-radius: 560px;
+   }
+
+   .hero_button-list {
+		left: 130px;
+      gap: 12px;
+      width: 476px;
+      height: 86px;
+      margin: 8px auto;
+      padding: 0;
+      border-radius: 50px;
+   }
+
 }
-   
+
 
 // Десктоптна версія 1200px
 @media screen and (min-width: 1200px) {
-    .hero_background {
-        width: 752px;
-        border-top-left-radius: 420px;
-        border-top-right-radius: 420px;
-    }
+   .hero_background {
+      width: 752px;
+		height: 504px;
+      border-top-left-radius: 420px;
+      border-top-right-radius: 420px;
+   }
+	.hero_button-list {
+		left: 346px;
+   }
 }

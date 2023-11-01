@@ -258,7 +258,7 @@ img {
     font-size: 24px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .btn2_color {
     width: 224px;
     height: 70px;
@@ -473,6 +473,7 @@ img {
 }
 .hero {
   padding-top: 64px;
+  position: relative;
 }
 
 .hero_container {
@@ -533,7 +534,7 @@ img {
 
 .hero_background {
   background-color: #fe4519;
-  height: 335px;
+  height: 256px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -550,6 +551,8 @@ img {
 }
 
 .hero_button-list {
+  position: absolute;
+  bottom: 0;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,7 +566,7 @@ img {
           align-items: center;
   background-color: #fff;
   height: 67px;
-  margin: 16px 10px;
+  margin: 16px 0;
   padding: 6px;
   border-radius: 50px;
 }
@@ -591,10 +594,12 @@ img {
   }
   .hero_background {
     width: 560px;
+    height: 340px;
     border-top-left-radius: 560px;
     border-top-right-radius: 560px;
   }
   .hero_button-list {
+    left: 130px;
     gap: 12px;
     width: 476px;
     height: 86px;
@@ -602,24 +607,16 @@ img {
     padding: 0;
     border-radius: 50px;
   }
-  .hero__btn1 {
-    width: 224px;
-    height: 70px;
-    font-size: 32px;
-    padding: 12px 24px;
-  }
-  .hero__btn2 {
-    width: 224px;
-    height: 70px;
-    font-size: 32px;
-    padding: 12px 24px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .hero_background {
     width: 752px;
+    height: 504px;
     border-top-left-radius: 420px;
     border-top-right-radius: 420px;
+  }
+  .hero_button-list {
+    left: 346px;
   }
 }
 .service_container {
@@ -789,13 +786,13 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .service_container {
-    padding: 100px 0;
+    padding: 50px 0;
   }
   .service_heading {
     font-size: 48px;
   }
   .service_text {
-    width: 435px;
+    width: 460px;
     font-size: 20px;
     margin-top: 0;
   }
