@@ -45,7 +45,7 @@
    }
 }
 
-.btn_arrow {
+.btn__arrow {
    position: absolute;
    right: 0;
    bottom: 0;
@@ -65,13 +65,13 @@
       background: $color-accent;
    }
 }
-.btn_arrow-blog {
+.btn__arrow-blog {
    background: $color-primary;
    right: 0;
    bottom: 180px;
    }
 
-.btn2_color{
+.btn2__color{
    width: 178px;
    height: 55px;
    border-radius: 50px;
@@ -93,7 +93,7 @@
          1px 4px 6px rgba(0, 0, 0, 0.16);
    }}
 
-.btn_second {
+.btn__second {
    list-style: none;
    background-color: $color-accent;
    width: 234px;
@@ -115,7 +115,7 @@
          1px 4px 6px rgba(0, 0, 0, 0.16);
       }
 }
-.btn_book_call{
+.btn__book_call{
    background-color: $color-accent;
    width: 112px;
    height: 44px;
@@ -142,7 +142,7 @@
       font-size: 32px;
       padding: 12px 24px;
    }
-   .btn2_color {
+   .btn2__color {
       width: 178px;
       height: 55px;
       font-size: 24px;
@@ -151,7 +151,7 @@
 }
 // Десктоптна версія 1200px
 @media screen and (min-width: 1200px) {
-   .btn2_color {
+   .btn2__color {
       width: 224px;
       height: 70px;
       font-size: 32px;

@@ -157,7 +157,7 @@ img {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.btn_arrow {
+.btn__arrow {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -176,17 +176,17 @@ img {
   -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn_arrow:hover, .btn_arrow:focus {
+.btn__arrow:hover, .btn__arrow:focus {
   background: #FE4519;
 }
 
-.btn_arrow-blog {
+.btn__arrow-blog {
   background: #262626;
   right: 0;
   bottom: 180px;
 }
 
-.btn2_color {
+.btn2__color {
   width: 178px;
   height: 55px;
   border-radius: 50px;
@@ -199,14 +199,14 @@ img {
   color: #FE4519;
   cursor: pointer;
 }
-.btn2_color:hover, .btn2_color:focus {
+.btn2__color:hover, .btn2__color:focus {
   background-color: #FE4519;
   color: #ffffff;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.btn_second {
+.btn__second {
   list-style: none;
   background-color: #FE4519;
   width: 234px;
@@ -221,12 +221,12 @@ img {
   cursor: pointer;
   padding: 12px 24px;
 }
-.btn_second:hover, .btn_second:focus {
+.btn__second:hover, .btn__second:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.btn_book_call {
+.btn__book_call {
   background-color: #FE4519;
   width: 112px;
   height: 44px;
@@ -251,7 +251,7 @@ img {
     font-size: 32px;
     padding: 12px 24px;
   }
-  .btn2_color {
+  .btn2__color {
     width: 178px;
     height: 55px;
     font-size: 24px;
@@ -259,7 +259,7 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .btn2_color {
+  .btn2__color {
     width: 224px;
     height: 70px;
     font-size: 32px;
@@ -1135,7 +1135,7 @@ img {
     font-size: 32px;
   }
 }
-.portfolio_box {
+.portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1146,7 +1146,7 @@ img {
   margin-top: 50px;
 }
 
-.portfolio_heading {
+.portfolio__heading {
   color: #000000;
   font-family: "Syne", serif;
   font-size: 36px;
@@ -1154,11 +1154,11 @@ img {
   margin-bottom: 18px;
 }
 
-.portfolio_heading-span {
+.portfolio__heading-span {
   color: #FE4519;
 }
 
-.card_container {
+.card__container {
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1169,7 +1169,7 @@ img {
   margin: 40px auto 18px auto;
 }
 
-.card_items {
+.card__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1177,7 +1177,7 @@ img {
       flex-wrap: wrap;
 }
 
-.card_item {
+.card__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1197,12 +1197,14 @@ img {
   padding: 12px;
 }
 
-.card_heading {
+.card__heading {
   color: #262626;
+  text-align: center;
   font-family: "Syne", serif;
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 18px;
+  padding: 0 12px;
 }
 
 #carousel {
@@ -1220,7 +1222,7 @@ img {
   transition: transform 0.9s;
   transition: transform 0.9s, -webkit-transform 0.9s;
 }
-#carousel #scene .carousel_item {
+#carousel #scene .carousel__item {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1228,12 +1230,12 @@ img {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-#carousel #scene .carousel_item:not(:first-of-type) {
+#carousel #scene .carousel__item:not(:first-of-type) {
   position: absolute;
   left: 0;
   top: 0;
 }
-#carousel #carousel_btn {
+#carousel #carousel__btn {
   width: 146px;
   margin: 20px auto 20px auto;
   -webkit-user-select: none;
@@ -1241,7 +1243,7 @@ img {
       -ms-user-select: none;
           user-select: none;
 }
-#carousel #carousel_btn .btn {
+#carousel #carousel__btn .btn {
   width: 68px;
   height: 45px;
   line-height: 42px;
@@ -1259,18 +1261,18 @@ img {
   transition: all 0.9s;
   margin-bottom: 90px;
 }
-#carousel #carousel_btn .btn:hover {
+#carousel #carousel__btn .btn:hover {
   background-color: #FE4519;
   color: #ffffff;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-#carousel #carousel_btn > div:first-child {
+#carousel #carousel__btn > div:first-child {
   margin-right: 10px;
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio_box {
+  .portfolio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1282,14 +1284,14 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .portfolio_heading {
+  .portfolio__heading {
     width: 60%;
     font-size: 48px;
   }
-  .card_item {
+  .card__item {
     font-size: 24px;
   }
-  .card_heading {
+  .card__heading {
     font-size: 36px;
   }
 }

@@ -17,8 +17,8 @@ window.addEventListener(
 function carouselRUN() {
   let carousel = document.getElementById('carousel');
   let scene = document.getElementById('scene');
-  let carousel_items_Arrey = document.getElementsByClassName('carousel_item');
-  let carousel_btn = document.getElementById('carousel_btn');
+  let carousel_items_Arrey = document.getElementsByClassName('carousel__item');
+  let carousel_btn = document.getElementById('carousel__btn');
   let n = carousel_items_Arrey.length;
   let curr_carousel_items_Arrey = 0;
   let theta = (Math.PI * 2) / n;

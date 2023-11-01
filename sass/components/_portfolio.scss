@@ -2,13 +2,12 @@
 
 // Мобільна версія 390px
 
-.portfolio_box{
+.portfolio{
    display: flex;
 	flex-direction: column;
-   // width: 1296px;
    margin-top: 50px;
 }
-.portfolio_heading {
+.portfolio__heading {
    // width: 50%;
    color: $color-black;
    font-family: "Syne", serif;
@@ -17,21 +16,21 @@
 	margin-bottom: 18px;
 }
 
-.portfolio_heading-span {
+.portfolio__heading-span {
    color: $color-accent;
 }
-.card_container{
+.card__container{
    display: grid;
    align-items: center;
    justify-content: center;
    margin: 40px auto 18px auto;
 }
-.card_items{
+.card__items{
    display: flex;
 	flex-wrap: wrap;
 
 }
-.card_item{
+.card__item{
    display: flex;
    align-items: center;
    justify-content: center;
@@ -44,12 +43,14 @@
    margin: 0 auto 12px auto;
    padding: 12px;
 }
-.card_heading{
+.card__heading{
    color: $color-primary;
+	text-align: center;
    font-family: "Syne", serif;
    font-weight: 600;
    font-size: 24px;
    margin-bottom: 18px;
+	padding: 0 12px;
 }
 
 // Configuration parameters
@@ -71,7 +72,7 @@ $distance: 1000px;
       transform-style: preserve-3d;
       transition: transform 0.9s;
 
-      .carousel_item {
+      .carousel__item {
          width: 100%;
          box-sizing: border-box;
          padding: 0 (calc($slide-separation / 2)) 0 (calc($slide-separation / 4));
@@ -85,13 +86,13 @@ $distance: 1000px;
       }
    }
 
-   #carousel_btn {
+   #carousel__btn {
    	width: 146px;
       margin: 20px auto 20px auto;
       user-select: none;
    }
 
-   #carousel_btn .btn {
+   #carousel__btn .btn {
       width: 68px;
       height: 45px;
       line-height: 42px;
@@ -108,7 +109,7 @@ $distance: 1000px;
       margin-bottom: 90px;
    }
 
-   #carousel_btn .btn:hover {
+   #carousel__btn .btn:hover {
       background-color: $color-accent;
       color: $color-white;
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -116,29 +117,29 @@ $distance: 1000px;
          1px 4px 6px rgba(0, 0, 0, 0.16);
    }
 
-   #carousel_btn>div:first-child {
+   #carousel__btn>div:first-child {
       margin-right: 10px;
    }
 }
 
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {
-   .portfolio_box {
+   .portfolio{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
    }
    
-   .portfolio_heading {
+   .portfolio__heading {
       width: 60%;
       font-size: 48px;
    }
- 
-   .card_item {
+
+   .card__item {
       font-size: 24px;
    }
    
-   .card_heading {
+   .card__heading {
       font-size: 36px;
    }
 
